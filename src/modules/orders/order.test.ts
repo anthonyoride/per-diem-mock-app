@@ -16,6 +16,7 @@ beforeEach(async() => {
 
 })
 
+// clear database tables after each tests
 afterAll(async () => {
     const connection = getConnection('test')
     const entities = connection.entityMetadatas

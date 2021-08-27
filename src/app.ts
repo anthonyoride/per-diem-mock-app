@@ -3,7 +3,7 @@ import {OrderController} from './modules/orders/order.controller'
 import {createConnections} from 'typeorm'
 import config from './config/orm.config'
 
-const port = Number(process.env.NODE_ENV === 'test' ? '5001' : '5000')
+const port = Number(process.env.PORT)
 
 const App = (async () => {
     try {
